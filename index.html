@@ -70,7 +70,10 @@
       radial-gradient(900px 500px at 0% 0%,var(--blush) 0%,transparent 60%),
       radial-gradient(900px 600px at 100% 10%,var(--lavender) 0%,transparent 60%),
       linear-gradient(180deg,#fff 0%,var(--beige) 100%)}
-  .hero-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:44px;align-items:start}
+  .hero-grid{max-width:920px;text-align:center}
+  .hero .desc{margin-left:auto;margin-right:auto}
+  .hero .chips{justify-content:center}
+  .hero-cta{margin-top:28px;padding:20px 40px;font-size:1.05rem}
   .hero h1{margin-top:16px}
   .hero .desc{font-size:1.12rem;color:var(--muted);max-width:640px}
 
@@ -280,39 +283,10 @@
         <li class="chip"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="15" height="14" rx="3"/><path d="M17 10l5-3v10l-5-3"/></svg>Online webinar</li>
         <li class="chip"><svg viewBox="0 0 24 24"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7c-2-4-6-4-6-1s6 1 6 1zm0 0c2-4 6-4 6-1s-6 1-6 1z"/></svg>Free to attend</li>
       </ul>
+      <a class="btn btn-primary hero-cta" href="#register">Save my free seat
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
 
-    <aside class="form-card" id="register-hero" aria-labelledby="heroFormTitle">
-      <span class="free-tag">Free registration</span>
-      <h3 id="heroFormTitle">Reserve your seat</h3>
-      <p class="sub">Takes 20 seconds. We'll send the joining link to your email and WhatsApp.</p>
-      <form class="reg-form" novalidate data-source="hero">
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <div class="field">
-          <label for="h-name">Your name</label>
-          <input id="h-name" name="name" type="text" autocomplete="name" placeholder="First and last name" required>
-          <div class="err">Please enter your name.</div>
-        </div>
-        <div class="field">
-          <label for="h-email">Email address</label>
-          <input id="h-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-          <div class="err">Please enter a valid email address.</div>
-        </div>
-        <div class="field">
-          <label for="h-wa">WhatsApp number</label>
-          <input id="h-wa" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 98765 43210" required>
-          <div class="err">Please enter a valid WhatsApp number (with country code).</div>
-        </div>
-        <button class="btn btn-primary btn-block" type="submit">Save my free seat
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <p class="privacy"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>Your details are safe with us. We only use them to send webinar updates. No spam, ever.</p>
-      </form>
-      <div class="form-success" role="status" aria-live="polite">
-        <div class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
-        <h3>You're in!</h3>
-        <p class="sub">Your seat is saved. Watch your email and WhatsApp for the joining link and reminders.</p>
-      </div>
-    </aside>
   </div>
 </section>
 
